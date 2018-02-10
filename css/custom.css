@@ -1,0 +1,137 @@
+body {
+    padding-top: 0;
+    /*background: url(../images/bg.png) no-repeat fixed center bottom;*/
+    /*background-size: cover;*/
+}
+
+.logo {
+    max-height: 30px;
+}
+
+.navbar-default {
+    background: rgb(12, 106, 185) none repeat scroll 0 0;
+}
+
+.navbar-header {
+    float: none;
+    display: inline-block;
+}
+
+.navbar-brand {
+    padding: 12px 5px 2px 5px;
+    transform: scale(1.8);
+    background: #0f3a5f;
+    border-radius: 0 0 3px 3px;
+    box-shadow: 0 1px 0 0 #071a2b;
+}
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+    background: #0f3a5f;
+}
+
+@media (max-width: 768px) {
+    .navbar-header {
+        display: block;
+    }
+
+    .navbar-brand {
+        background: transparent;
+        box-shadow: none;
+        padding: 10px 5px;
+        transform: scale(1);
+        height: auto;
+    }
+
+    .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+        background: transparent;
+    }
+
+    .logo {
+        max-height: 50px;
+    }
+
+    .navbar-nav {
+        margin: 0;
+    }
+}
+
+.navbar-nav > li > a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+nav .navbar-right li {
+    display: inline-block;
+    transition: background 0.2s;
+    transform: skew(-20deg); /* SKEW */
+    background: #004c8c;
+    margin-right: 1px;
+}
+
+nav .navbar-right li:hover {
+    transition: all 0.2s;
+    transform: scale(1.1, 1.1) skew(-20deg);
+}
+
+nav .navbar-right li a {
+    display: block;
+    transform: skew(20deg); /* INVERSE SKEW */
+}
+
+nav .navbar-left li {
+    display: inline-block;
+    transition: background 0.2s;
+    transform: skew(20deg); /* SKEW */
+    background: #004c8c;
+}
+
+nav .navbar-left li:hover {
+    transition: all 0.2s;
+    transform: scale(1.1, 1.1) skew(20deg);
+}
+
+nav .navbar-left li a {
+    display: block;
+    transform: skew(-20deg); /* INVERSE SKEW */
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #eee;
+    font-weight: bold;
+}
+
+nav li.active,
+nav li:hover {
+    background: #093b65;
+}
+
+.scroll-indicator {
+    font-size: 50px;
+}
+
+.btn-up-footer {
+    top: -21px;
+    font-size: 30px;
+    line-height: 1em;
+    padding: 0 20px;
+}
+
+footer {
+    position: relative;
+}
+
+.footer-bg {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+
+    background: rgb(12, 106, 185) url(../images/bg.png) no-repeat fixed center bottom;
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+}
+
+.text-pink {
+    color: #b90064;
+}
